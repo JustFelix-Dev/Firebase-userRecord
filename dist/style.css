@@ -1,0 +1,97 @@
+.main::-webkit-scrollbar{
+    width: .4em;
+    margin-right: 10px;
+}
+.main::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 30px;
+}
+.main::-webkit-scrollbar-track{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+body{
+     min-height: 95.5vh;
+    background: linear-gradient(18deg,yellow,red);
+    background-size: 400%;
+    background-repeat: no-repeat;
+    animation: backgrounds 5s infinite alternate; 
+}
+
+
+@keyframes backgrounds {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+h1{
+text-align: center;
+color: white;
+}
+
+input{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    margin: 0 .7rem;
+    padding: .4rem .2rem;
+}
+button{
+    border: 0;
+    padding: .5rem 1rem;
+    transition: all ease-out 100ms;
+    cursor: pointer;
+    background-color: orange;
+}
+button:hover{
+    box-shadow: 0 0 3px 0 gray;
+}
+.main{
+ width: 80%;
+ height: 500px;
+ margin: 0 auto;
+ background-color:lightyellow;
+ padding: 1em;
+ border-radius: 0 20px;
+ box-shadow: 0 0 10px 6px rgb(97, 91, 91);
+ overflow-y: auto;
+}
+form{
+text-align: center;
+}
+li span:nth-child(2){
+opacity: 0.5;
+}
+li button{
+position: absolute;
+top: .2em;
+right: .7em;
+border: 0;
+background: transparent;
+color: white;
+cursor: pointer;
+transition: all ease-in 100ms;
+}
+li button:hover{
+transform: scale(0.7);
+}
+ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+ul li{
+background-color: rgb(216, 185, 4);
+padding: .5em .9em;
+margin-block: .3em;
+color: black;
+font-weight: 600;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+position: relative;
+transition: all ease-in 200ms;
+}
